@@ -229,21 +229,47 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+![Screen Shot 2022-10-24 at 10 48 58 PM](https://user-images.githubusercontent.com/6706384/197670616-a5b7ee5c-8acf-46c3-8910-e77c266d9378.png)
+
+In fact, I decided to pivot a direction after completing part B and design something different. 
+
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
 1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+
+The new idea is supposed to webscrap weather and use contour detection to tell whether the user is wearing enough clothes according to the temperature. 
+
+2. When does it fail?
+
+It fails when the contour detection fails and does not give the correct feedback. 
+
+3. When it fails, why does it fail?
+
+It fails because the contour detection does not get the correct exposed skin area. 
+
+4. Based on the behavior you have seen, what other scenarios could cause problems?
+
+When the background color is very close to skin color or very white. 
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+
+No, they are not.
+
+2. How bad would they be impacted by a miss classification?
+
+They will not be impacted very badly. 
+
+4. How could change your interactive system to address this?
+
+I can set it up in an environment with dark background or hand adjust code to experiment with pixels. 
+
+5. Are there optimizations you can try to do on your sense-making algorithm.
+
+I'm not sure and I will look into it. 
 
 ### Part D
 ### Characterize your own Observant system
@@ -251,12 +277,19 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+It can be used for give recommendations to clothes based on weather. It will be especially useful for people live in places where weathers change constantly. 
 * What is a good environment for X?
+A room or environment with pure and dark background
 * What is a bad environment for X?
+An environment where background is composed of different light colors, especially colors that are close to skin pixels. 
 * When will X break?
+It will break when the camera runs out of battery or the website that supports the backend web scrapping algorithm breaks.
 * When it breaks how will X break?
+It will no longer work as expected to provide recommendations.
 * What are other properties/behaviors of X?
+It will also take in user preferences and give user clothes styling recommendations based on user input, current weather, and a decision tree algorithm
 * How does X feel?
+The device should feel caring and empathetic. 
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
 
